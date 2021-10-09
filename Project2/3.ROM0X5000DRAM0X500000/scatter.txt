@@ -1,0 +1,12 @@
+LOAD_ROM 0x0 0x500000
+{
+EXEC_ROM 0x0 0x5000
+{
+*.o  (+RO)
+}
+DRAM 0x5000 0x500000
+{
+* (ram)
+* (+ZI, +RW)
+}
+}

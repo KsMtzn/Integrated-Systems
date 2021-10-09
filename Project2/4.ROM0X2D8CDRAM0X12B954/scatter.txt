@@ -1,0 +1,14 @@
+LOAD_ROM 0x0 0x00002D8C
+{
+EXEC_ROM 0x0 0x2D8C
+{
+*.o ( +RO )
+}
+DRAM 0x2D8C 0x0012B954
+{
+* (ram)
+* ( +ZI )
+* ( +RW )
+}
+
+}
