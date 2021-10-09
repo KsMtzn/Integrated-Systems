@@ -1,0 +1,15 @@
+LOAD_ROM 0x0 0x00002D54
+{
+	EXEC_ROM 0x0 0x00002D54
+	{
+		*.o  (+RO)
+	}
+	DRAM 0x00002D54 0x0012B958
+	{
+		* (+ZI, +RW)
+	}
+	SRAM 0x0012E6AC 0x00001098
+	{
+		*(sram)
+	}
+}
